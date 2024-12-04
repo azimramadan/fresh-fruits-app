@@ -76,20 +76,25 @@ class _OnboardingViewState extends State<OnboardingView> {
                   color: Colors.black,
                   backgroundColor: const Color(0xffFEC54B),
                 )
-              : NextButtonWidget(
-                  onPressed: () {},
-                  text: 'Create an account',
-                  color: Colors.white,
-                  backgroundColor: Colors.black,
+              : Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    NextButtonWidget(
+                      onPressed: () {},
+                      text: 'Create an account',
+                      color: Colors.white,
+                      backgroundColor: Colors.black,
+                    ),
+                    const SizedBox(height: 20),
+                    NextButtonWidget(
+                      onPressed: () {},
+                      text: 'Login',
+                      color: Colors.black,
+                      backgroundColor: Colors.white,
+                      borderColor: Colors.black,
+                    ),
+                  ],
                 ),
-          const SizedBox(height: 20),
-          NextButtonWidget(
-            onPressed: () {},
-            text: 'Login',
-            color: Colors.black,
-            backgroundColor: Colors.white,
-            borderColor: Colors.black,
-          ),
         ],
       ),
     );
